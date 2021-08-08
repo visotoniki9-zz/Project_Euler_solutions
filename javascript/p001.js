@@ -3,8 +3,11 @@
 
 // Find the sum of all the multiples of 3 or 5 below 1000.
 
-console.log(
-  [...Array(1000).keys()]
+function compute() {
+  const ans = [...Array(1000).keys()]
     .filter((num) => num % 3 === 0 || num % 5 === 0)
-    .reduce((a, b) => a + b, 0),
-);
+    .reduce((a, b) => a + b, 0);
+  return ans;
+}
+
+console.log(compute());

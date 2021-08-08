@@ -6,17 +6,21 @@
 // By considering the terms in the Fibonacci sequence whose values
 // do not exceed four million, find the sum of the even-valued terms.
 
-let ans = 0;
-let x = 1; // Current
-let y = 2; // Next
-let temp;
+function compute() {
+  let ans = 0;
+  let x = 1; // Current
+  let y = 2; // Next
+  let temp;
 
-while (x <= 4000000) {
-  if (x % 2 === 0) ans += x;
+  while (x <= 4000000) {
+    if (x % 2 === 0) ans += x;
 
-  temp = x;
-  x = y;
-  y = temp + y;
+    temp = x;
+    x = y;
+    y = temp + y;
+  }
+
+  return ans;
 }
 
-console.log(ans);
+console.log(compute());

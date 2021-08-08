@@ -12,5 +12,6 @@ module.exports = {
   },
   rules: {
     'prefer-const': 'off',
+    'no-console': 'off',
   },
 };

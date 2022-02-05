@@ -1,17 +1,18 @@
 {
-  "name": "javascript",
-  "version": "1.0.0",
+  "author": "",
   "description": "",
-  "main": "p001.js",
+  "keywords": [],
+  "license": "ISC",
+  "main": "eulerLib.js",
+  "name": "javascript",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4"
+  "type": "module",
+  "version": "1.0.0",
+  "dependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2"
   }
 }
